@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>ShopEasy</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section>
+        <h2 class="page-title">Contact Us</h2>
+        <form class="contact-form" onsubmit="showpopup(event)">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your email" required>
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <div id="popup">
+        <div class="popup-box">
+            <p>Thank You for contacting us! We will get Back to You</p>
+            <button class="popup-button" onclick="closepopup()">OK</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
